@@ -17,6 +17,8 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: '3.x'
+    - name: Install python3-setuptools
+      run: sudo apt-get install -y python3-setuptools
     - name: Write PyPI credentials to ~/.pypirc
       run: |
         echo "[pypi]" >> $HOME/.pypirc
