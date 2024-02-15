@@ -2,7 +2,7 @@
 ccstiet python package.
 
 
-##Publishing to pypi
+## Publishing to pypi
 ### make tar file
 python setup.py sdist upload -r pypi
 
