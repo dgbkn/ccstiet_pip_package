@@ -16,7 +16,7 @@ def read(fname):
 setup(
     name='ccstiet',
     version=__version__,
-    description='pip Package for ccstiet',
+    description='pip package for Creative Computing Society,Thapar University,Patiala,India',
     # long_description=read('README'),
     url='https://github.com/dgbkn/ccstiet_pip_package',
     author='dgbkn',
