@@ -3,6 +3,8 @@ ccstiet python package.
 
 
 ## Publishing to pypi
+
+### Need to add .pypirc file in home directory
 ### make tar file
 python setup.py sdist upload -r pypi
 
