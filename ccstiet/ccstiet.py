@@ -1,4 +1,6 @@
-
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 class exbo(object):
   # constructor
   def __init__(self):
@@ -65,6 +67,26 @@ def sparsh():
 def swapnil():
     print("Swapnil Chhibber")
 
+def sendEmail(email,password,recp_email,Subject, messageBody):
+    try:
+        sender_email = email
+        sender_password = password
+        recipient_email =recp_email
+        message = MIMEMultipart()
+        message['From'] = sender_email
+        message['To'] = recipient_email
+        message['Subject'] = Subject
+        body = messageBody
+        message.attach(MIMEText(body, 'plain'))
+
+        with smtplib.SMTP('smtp.gmail.com', 587) as server:   
+            server.starttls()
+            server.login(sender_email, sender_password)     
+            server.send_message(message)
+
+        print(f"Email sent successfully to {recipient_email}")
+    except:
+        print(f"Error occurred. Email not sent for {recipient_email}")
 
 if __name__ == '__main__':
   pass
