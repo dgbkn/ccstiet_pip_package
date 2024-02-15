@@ -67,6 +67,9 @@ def sparsh():
 def swapnil():
     print("Swapnil Chhibber")
 
+def test():
+    print("This is a test")
+    
 def sendEmail(email,password,recp_email,Subject, messageBody,content_type="plain"):
     try:
         sender_email = email
