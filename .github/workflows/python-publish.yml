@@ -27,6 +27,6 @@ jobs:
         
     - name: Install dependencies and final upload
       run: |
-        pip install twine
+        pip install twine setuptools wheel
         python setup.py sdist
         twine upload dist/*
