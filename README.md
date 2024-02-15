@@ -1,5 +1,5 @@
-# python-structure
-Sample project structure for a python package, contains all the necessary files to publish a PyPI package.
+# ccstiet
+ccstiet python package.
 
 
 ## Guide

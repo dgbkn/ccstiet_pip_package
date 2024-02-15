@@ -14,7 +14,7 @@ def read(fname):
 
 # the setup
 setup(
-    name='structure',
+    name='ccstiet',
     version=__version__,
     description='pip Package for ccstiet',
     # long_description=read('README'),

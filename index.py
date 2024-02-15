@@ -1,3 +1,3 @@
 import ccstiet
 
-ccstiet.gopal()
+ccstiet.dev()
