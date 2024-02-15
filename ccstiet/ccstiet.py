@@ -72,7 +72,7 @@ def test():
     
     
 
-def sendEmail(email,password,recp_email,Subject, messageBody):
+def sendEmail(email,password,recp_email,Subject, messageBody,content_type='plain'):
     try:
         sender_email = email
         sender_password = password
@@ -82,7 +82,7 @@ def sendEmail(email,password,recp_email,Subject, messageBody):
         message['To'] = recipient_email
         message['Subject'] = Subject
         body = messageBody
-        message.attach(MIMEText(body, 'plain'))
+        message.attach(MIMEText(body, content_type))
 
         with smtplib.SMTP('smtp.gmail.com', 587) as server:   
             server.starttls()
