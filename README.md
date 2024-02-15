@@ -2,6 +2,13 @@
 ccstiet python package.
 
 
+##Publishing to pypi
+### make tar file
+python setup.py sdist upload -r pypi
+
+### twine upload
+twine upload dist/*
+
 ## Guide
 
 - use `Python 3` and `pip3` like `npm`
